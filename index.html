@@ -9,14 +9,24 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./Images/favicon_AH-removebg-preview.png" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/style.css">
-    <title>Antonio - Portfólio</title>
+    <meta name="description"
+        content="Portfólio de Antonio Henrique, desenvolvedor full stack em formação, com foco em Java, Spring Boot e aplicações web modernas.">
+    <title>Antonio Henrique | Desenvolvedor Full Stack Java & Spring</title>
+    <meta property="og:title" content="Antonio Henrique | Desenvolvedor Full Stack Java & Spring">
+    <meta property="og:description"
+        content="Portfólio de Antonio Henrique, desenvolvedor full stack em formação com foco em Java, Spring Boot e aplicações web.">
+    <meta property="og:image" content="https://ahss-dev.github.io/portfolio/Images/Foto_principal_home.png">
+    <meta property="og:url" content="https://ahss-dev.github.io/portfolio/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+
 </head>
 
 <body>
     <section id="home">
         <header id="header">
             <div class="logo">
-                <img src="./Images/logo pessoal.png" alt="Logo Antonio Henrique">
+                <img src="./Images/logo pessoal.png" alt="Logo Antonio Henrique" loading="eager">
             </div>
             <nav id="nav">
                 <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu"
@@ -31,31 +41,33 @@
                 </ul>
             </nav>
         </header>
-        <div id="home-content">
+        <div id="home-content" class="animate fade-left">
             <h1>Olá, eu sou o Antonio</h1>
             <p>Estudante de Engenharia de Software e desenvolvedor Full Stack.</p>
         </div>
-        <div id="home-image">
-            <img src="./Images/Foto principal sem fundo.png" alt="Foto principal do Antonio Henrique">
+        <div id="home-image" class="animate fade-up">
+            <img src="./Images/Foto_principal_home.png" alt="Foto principal do Antonio Henrique" loading="eager">
         </div>
-        <div class="social-links">
-            <a href="https://www.instagram.com/antonio.hss.dev/" target="_blank" aria-label="Instagram">
+        <div class="social-links animate fade-up delay-3">
+            <a href="https://www.instagram.com/antonio.hss.dev/" target="_blank"
+                aria-label="Instagram de Antonio Henrique" rel="noopener noreferrer">
                 <i class="fa-brands fa-instagram"></i>
             </a>
 
             <a href="https://www.linkedin.com/in/antonio-henrique-soares-santos-9a4073316" target="_blank"
-                aria-label="LinkedIn">
+                aria-label="LinkedIn de Antonio Henrique" rel="noopener noreferrer">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
 
-            <a href="https://github.com/ahss-dev" target="_blank" aria-label="GitHub">
+            <a href="https://github.com/ahss-dev" target="_blank" aria-label="GitHub de Antonio Henrique"
+                rel="noopener noreferrer">
                 <i class="fa-brands fa-github"></i>
             </a>
         </div>
 
     </section>
     <section id="about">
-        <div id="about-content">
+        <div id="about-content" class="animate fade-up">
             <p>
                 Sou Antônio Henrique, estudante de Engenharia de Software e desenvolvedor full stack em formação.
             </p>
@@ -67,29 +79,33 @@
                 Cada projeto representa um passo no meu processo de aprendizado e evolução na área de desenvolvimento.
             </p>
         </div>
-        <div id="about-image">
-            <img src="./Images/Foto About Antonio.png" alt="Foto do Antonio Henrique para seção Sobre">
+        <div id="about-image" class="animate fade-up delay-2">
+            <img src="./Images/Foto About Antonio.png" alt="Foto do Antonio Henrique para seção Sobre" loading="lazy">
         </div>
         <div>
             <div class="title">
-                <h1>Hard Skills</h1>
+                <h2>Hard Skills</h2>
             </div>
             <div class="hard-skills">
-                <img src="./Images/icons8-html-5.svg" alt="Hard Skills do Antonio Henrique">
-                <img src="./Images/icons8-css3.svg" alt="Hard Skills do Antonio Henrique">
-                <img src="./Images/icons8-javascript-96.svg" alt="Hard Skills do Antonio Henrique">
-                <img src="./Images/icons8-java-96.png" alt="Hard Skills do Antonio Henrique">
-                <img src="./Images/icons8-logotipo-da-primavera.svg" alt="Hard Skills do Antonio Henrique">
-                <img src="./Images/icons8-angular.svg" alt="Hard Skills do Antonio Henrique">
-                <img src="./Images/icons8-postgresql-96.png" alt="Hard Skills do Antonio Henrique">
-                <img src="./Images/icons8-git-96.png" alt="Hard Skills do Antonio Henrique">
+                <img src="./Images/icons8-html-5.svg" class="animate fade-up delay-1" alt="HTML" loading="lazy">
+                <img src="./Images/icons8-css3.svg" class="animate fade-up delay-2" alt="CSS" loading="lazy">
+                <img src="./Images/icons8-javascript-96.svg" class="animate fade-up delay-3" alt="JavaScript"
+                    loading="lazy">
+                <img src="./Images/icons8-java-96.png" class="animate fade-up delay-4" alt="Java" loading="lazy">
+                <img src="./Images/icons8-logotipo-da-primavera.svg" class="animate fade-up delay-5" alt="Spring Boot"
+                    loading="lazy">
+                <img src="./Images/icons8-angular.svg" class="animate fade-up delay-6" alt="Angular" loading="lazy">
+                <img src="./Images/icons8-postgresql-96.png" class="animate fade-up delay-7" alt="PostgreSQL"
+                    loading="lazy">
+                <img src="./Images/icons8-git-96.png" class="animate fade-up delay-8" alt="Git" loading="lazy">
             </div>
         </div>
     </section>
     <section id="projects">
-        <h1 class="title">Projetos</h1>
-        <div class="project">
-            <img src="./Images/Landing Page Project.png" alt="Projeto 1 do Antonio Henrique">
+        <h2 class="title">Projetos</h2>
+        <div class="project animate fade-scale">
+            <img src="./Images/Landing Page Project.png"
+                alt="Landing page desenvolvida em HTML, CSS e JavaScript por Antonio Henrique" loading="lazy">
             <div class="project-info">
                 <h2>Projeto: Landing Page</h2>
                 <p>Este projeto consiste no desenvolvimento de uma landing page, uma página web criada com foco em um
@@ -103,29 +119,31 @@
         </div>
     </section>
     <section id="contact">
-        <h1 class="title">Vamos Conversar</h1>
-        <p>
+        <h2 class="title animate fade-up">Vamos Conversar</h2>
+        <p class="animate fade-up delay-1">
             Este portfólio representa meu aprendizado até aqui.
             Estou em constante evolução como desenvolvedor full stack e aberto a colaborar em novos projetos.
         </p>
-        <p>
+        <p class="animate fade-up delay-2">
             Se fizer sentido, vamos conversar.
         </p>
-        <div>
+        <div class="animate fade-up delay-3">
             <img src="./Images/openart-image_WKjNAQvQ_1770422076910_raw.jpg"
-                alt="Foto de Antonio Henrique trabalhando em um projeto">
+                alt="Foto de Antonio Henrique trabalhando em um projeto" loading="lazy">
         </div>
-        <div class="social-links">
-            <a href="https://www.instagram.com/antonio.hss.dev/" target="_blank" aria-label="Instagram">
+        <div class="social-links animate fade-up delay-4">
+            <a href="https://www.instagram.com/antonio.hss.dev/" target="_blank" aria-label="Instagram"
+                rel="noopener noreferrer">
                 <i class="fa-brands fa-instagram"></i>
             </a>
 
             <a href="https://www.linkedin.com/in/antonio-henrique-soares-santos-9a4073316" target="_blank"
-                aria-label="LinkedIn">
+                aria-label="LinkedIn" rel="noopener noreferrer">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
 
-            <a href="https://github.com/ahss-dev" target="_blank" aria-label="GitHub">
+            <a href="https://github.com/ahss-dev" target="_blank" aria-label="GitHub de Antonio Henrique"
+                rel="noopener noreferrer">
                 <i class="fa-brands fa-github"></i>
             </a>
         </div>
