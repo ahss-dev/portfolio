@@ -25,89 +25,130 @@
 <body>
     <section id="home">
         <header id="header">
-            <div class="logo">
-                <img src="./Images/logo pessoal.png" alt="Logo Antonio Henrique" loading="eager">
+            <div class="content-width">
+                <div class="logo">
+                        <img src="./Images/logo pessoal.png" alt="Logo Antonio Henrique" loading="eager">
+                </div>
+                <nav id="nav">
+                    <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu"
+                        aria-expanded="false">Menu
+                        <span id="hamburguer"></span>
+                    </button>
+                    <ul id="menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav id="nav">
-                <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu"
-                    aria-expanded="false">Menu
-                    <span id="hamburguer"></span>
-                </button>
-                <ul id="menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </nav>
         </header>
-        <div id="home-content" class="animate fade-left">
-            <h1>Olá, eu sou o Antonio</h1>
-            <p>Estudante de Engenharia de Software e desenvolvedor Full Stack.</p>
-        </div>
-        <div id="home-image" class="animate fade-up">
-            <img src="./Images/Foto_principal_home.png" alt="Foto principal do Antonio Henrique" loading="eager">
-        </div>
-        <div class="social-links animate fade-up delay-3">
-            <a href="https://www.instagram.com/antonio.hss.dev/" target="_blank"
-                aria-label="Instagram de Antonio Henrique" rel="noopener noreferrer">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
+        <div class="content-width">
+            <div id="home-content" class="animate fade-left">
+                <h1>Olá, eu sou o Antonio</h1>
+                <p>Estudante de Engenharia de Software e desenvolvedor Full Stack.</p>
+            </div>
+            <div id="home-image" class="animate fade-up">
+                <img src="./Images/Foto_principal_home.png" alt="Foto principal do Antonio Henrique" loading="eager">
+            </div>
+            <div class="social-links animate fade-up delay-3">
+                <a href="https://www.instagram.com/antonio.hss.dev/" target="_blank"
+                    aria-label="Instagram de Antonio Henrique" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
 
-            <a href="https://www.linkedin.com/in/antonio-henrique-soares-santos-9a4073316" target="_blank"
-                aria-label="LinkedIn de Antonio Henrique" rel="noopener noreferrer">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
+                <a href="https://www.linkedin.com/in/antonio-henrique-soares-santos-9a4073316" target="_blank"
+                    aria-label="LinkedIn de Antonio Henrique" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
 
-            <a href="https://github.com/ahss-dev" target="_blank" aria-label="GitHub de Antonio Henrique"
-                rel="noopener noreferrer">
-                <i class="fa-brands fa-github"></i>
-            </a>
+                <a href="https://github.com/ahss-dev" target="_blank" aria-label="GitHub de Antonio Henrique"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
         </div>
 
     </section>
-    <section id="about">
+    <section id="about" class="content-width">
         <div id="about-content" class="animate fade-up">
-            <p>
-                Sou Antônio Henrique, estudante de Engenharia de Software e desenvolvedor full stack em formação.
-            </p>
-            <p>
-                Atualmente foco no desenvolvimento de aplicações web, explorando desde a construção de interfaces
-                até a lógica por trás dos sistemas.
-            </p>
-            <p>
-                Cada projeto representa um passo no meu processo de aprendizado e evolução na área de desenvolvimento.
-            </p>
+            <div class="about-text-box">
+                <div>
+                    <h2 class="title">Sobre Mim</h2>
+                </div>
+                <p>
+                    Sou Antônio Henrique, estudante de Engenharia de Software e desenvolvedor full stack em formação.
+                </p>
+                <p>
+                    Atualmente foco no desenvolvimento de aplicações web, explorando desde a construção de interfaces
+                    até a lógica por trás dos sistemas.
+                </p>
+                <p>
+                    Cada projeto representa um passo no meu processo de aprendizado e evolução na área de
+                    desenvolvimento.
+                </p>
+            </div>
+            <div id="about-image" class="animate fade-up delay-2">
+                <img src="./Images/Foto About Antonio.png" alt="Foto do Antonio Henrique para seção Sobre"
+                    loading="lazy">
+            </div>
         </div>
-        <div id="about-image" class="animate fade-up delay-2">
-            <img src="./Images/Foto About Antonio.png" alt="Foto do Antonio Henrique para seção Sobre" loading="lazy">
-        </div>
-        <div>
-            <div class="title">
-                <h2>Hard Skills</h2>
+        <div id="hard-skills-box">
+            <div>
+                <h2 class="title">Hard Skills</h2>
             </div>
             <div class="hard-skills">
-                <img src="./Images/icons8-html-5.svg" class="animate fade-up delay-1" alt="HTML" loading="lazy">
-                <img src="./Images/icons8-css3.svg" class="animate fade-up delay-2" alt="CSS" loading="lazy">
-                <img src="./Images/icons8-javascript-96.svg" class="animate fade-up delay-3" alt="JavaScript"
-                    loading="lazy">
-                <img src="./Images/icons8-java-96.png" class="animate fade-up delay-4" alt="Java" loading="lazy">
-                <img src="./Images/icons8-logotipo-da-primavera.svg" class="animate fade-up delay-5" alt="Spring Boot"
-                    loading="lazy">
-                <img src="./Images/icons8-angular.svg" class="animate fade-up delay-6" alt="Angular" loading="lazy">
-                <img src="./Images/icons8-postgresql-96.png" class="animate fade-up delay-7" alt="PostgreSQL"
-                    loading="lazy">
-                <img src="./Images/icons8-git-96.png" class="animate fade-up delay-8" alt="Git" loading="lazy">
+                <div class="skill">
+                    <img src="./Images/icons8-html-5.svg" class="animate fade-up delay-1" alt="HTML" loading="lazy">
+                    <span>HTML5</span>
+                </div>
+                <div class="skill">
+                    <img src="./Images/icons8-css3.svg" class="animate fade-up delay-2" alt="CSS" loading="lazy">
+                    <span>CSS3</span>
+                </div>
+                <div class="skill">
+                    <img src="./Images/icons8-javascript-96.svg" class="animate fade-up delay-3" alt="JavaScript"
+                        loading="lazy">
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill">
+                    <img src="./Images/icons8-java-96.png" class="animate fade-up delay-4" alt="Java" loading="lazy">
+                    <span>Java</span>
+                </div>
+                <div class="skill">
+                    <img src="./Images/icons8-logotipo-da-primavera.svg" class="animate fade-up delay-5"
+                        alt="Spring Boot" loading="lazy">
+                    <span>Spring Boot</span>
+                </div>
+                <div class="skill">
+                    <img src="./Images/icons8-angular.svg" class="animate fade-up delay-6" alt="Angular" loading="lazy">
+                    <span>Angular</span>
+                </div>
+                <div class="skill">
+                    <img src="./Images/icons8-postgresql-96.png" class="animate fade-up delay-7" alt="PostgreSQL"
+                        loading="lazy">
+                    <span>PostgreSQL</span>
+                </div>
+                <div class="skill">
+                    <img src="./Images/icons8-git-96.png" class="animate fade-up delay-8" alt="Git" loading="lazy">
+                    <span>Git</span>
+                </div>
+
+
             </div>
         </div>
     </section>
-    <section id="projects">
-        <h2 class="title">Projetos</h2>
+    <section id="projects" class="content-width">
+        <div>
+            <h2 class="title">Projetos</h2>
+        </div>
         <div class="project animate fade-scale">
             <img src="./Images/Landing Page Project.png"
                 alt="Landing page desenvolvida em HTML, CSS e JavaScript por Antonio Henrique" loading="lazy">
             <div class="project-info">
-                <h2>Projeto: Landing Page</h2>
+                <div class="title">
+                    <h2>Projeto: Landing Page</h2>
+                </div>
                 <p>Este projeto consiste no desenvolvimento de uma landing page, uma página web criada com foco em um
                     único objetivo: guiar o usuário para uma ação específica, como realizar um cadastro, baixar um
                     material, entrar em contato ou conhecer um produto/serviço.</p>
@@ -118,7 +159,7 @@
             </div>
         </div>
     </section>
-    <section id="contact">
+    <section id="contact" class="content-width">
         <h2 class="title animate fade-up">Vamos Conversar</h2>
         <p class="animate fade-up delay-1">
             Este portfólio representa meu aprendizado até aqui.

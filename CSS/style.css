@@ -1,3 +1,4 @@
+/* #region Inicio: Resets, fontes e cores padrões da pagina */
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +19,7 @@
     --gray-700: #3d3d3d;
 
     --border-light: rgba(182, 182, 182, 0.5);
+    --border-dark: rgba(0, 0, 0, 0.5);
 
     --brand-instagram: #e1306c;
     --brand-linkedin: #0a66c2;
@@ -41,6 +43,8 @@
     --line-lg: 2rem;
 }
 
+/* #endregion Final da aba resets, fontes e cores padrões */
+
 body {
     font-family: 'Inter', sans-serif;
     font-size: var(--font-md);
@@ -51,15 +55,19 @@ body {
 }
 
 section {
-    margin-bottom: 15px;
+    margin-bottom: 40px;
 }
 
-#header {
+/* #region Cabeçalho do site */
+header {
     border-bottom: 1px solid var(--bg-light);
+}
+
+#header .content-width {
     height: 70px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 20px;
 }
 
@@ -89,7 +97,6 @@ header .logo img {
 }
 
 #menu li:hover {
-    background-color: var(--gray-500);
     transition: var(--transition-normal);
 }
 
@@ -129,7 +136,8 @@ header .logo img {
 #btn-mobile {
     display: flex;
     padding: .5rem 1rem;
-    font-size: 1rem;
+    right: 0;
+    font-size: var(--font-md);
     border: none;
     background: none;
     color: var(--text-primary);
@@ -168,6 +176,12 @@ header .logo img {
     transform: rotate(-135deg);
     position: relative;
     top: -7px;
+}
+
+/* #endregion Cabeçalho do site */
+/* #region Conteúdo da página HOME */
+section #home {
+    height: 100vh;
 }
 
 #home-content {
@@ -224,6 +238,8 @@ header .logo img {
     color: var(--brand-github);
 }
 
+/* #endregion Conteúdo da página HOME */
+/* #region Conteúdo da página SOBRE MIM */
 #about {
     font-size: var(--font-md);
     line-height: var(--line-md);
@@ -240,7 +256,9 @@ header .logo img {
 #about-image img {
     margin-top: 20px;
     width: 100%;
+    border-radius: 20px;
     height: auto;
+    box-shadow: #020202 10px 30px 20px -10px;
 }
 
 .title {
@@ -258,6 +276,44 @@ header .logo img {
     margin-top: 20px;
 }
 
+.skill {
+    position: relative;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.skill img {
+    width: 100%;
+}
+
+.skill span {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: var(--font-sm);
+    color: var(--text-dark);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hard-skills:hover .skill {
+    opacity: 0.3;
+}
+
+.hard-skills .skill:hover {
+    opacity: 1;
+    transform: translateY(-8px);
+}
+
+.skill:hover span {
+    opacity: 1;
+}
+
+/* #endregion Conteúdo da página SOBRE MIM */
+/* #region Conteúdo da página PROJETOS */
 #projects {
     color: var(--text-primary);
     padding: 20px;
@@ -308,6 +364,8 @@ header .logo img {
     object-fit: cover;
 }
 
+/* #endregion Conteúdo da página HOME */
+
 footer {
     border-top: 1px solid var(--text-secondary);
     height: 50px;
@@ -318,7 +376,7 @@ footer {
     font-size: var(--font-xs);
 }
 
-/*animação para os elementos da tela*/
+/* #region Animação dos elementos da página */
 
 .animate {
     opacity: 0;
@@ -344,31 +402,31 @@ footer {
 }
 
 .delay-2 {
-    transition-delay: 0.4s;
+    transition-delay: 0.3s;
 }
 
 .delay-3 {
-    transition-delay: 0.6s;
+    transition-delay: 0.4s;
 }
 
 .delay-4 {
-    transition-delay: 0.8s;
+    transition-delay: 0.5s;
 }
 
 .delay-5 {
-    transition-delay: 0.9s;
+    transition-delay: 0.6s;
 }
 
 .delay-6 {
-    transition-delay: 1s;
+    transition-delay: 0.7s;
 }
 
 .delay-7 {
-    transition-delay: 1.1s;
+    transition-delay: 0.8s;
 }
 
 .delay-8 {
-    transition-delay: 1.2s;
+    transition-delay: 1s;
 }
 
 /*projetos animados*/
@@ -379,4 +437,229 @@ footer {
 .animate.show.fade-scale {
     opacity: 1;
     transform: scale(1);
+}
+
+/* #endregion Animação dos elementos da página */
+
+/* Tablets (Portrait/Em pé) */
+@media (min-width: 768px) {
+
+    #btn-mobile {
+        display: none;
+    }
+
+    #header .content-width {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #menu {
+        position: static;
+        display: flex;
+        width: auto;
+        height: auto;
+        visibility: visible;
+        background: none;
+        overflow: visible;
+    }
+
+    #menu li {
+        margin-left: 20px;
+        width: auto;
+        border: none;
+        align-items: center;
+        background-color: transparent;
+    }
+
+    #menu li a:hover {
+        transition: var(--transition-normal);
+        letter-spacing: 1px;
+    }
+
+    #menu li a::after {
+        content: "";
+        display: block;
+        width: 0;
+        border-bottom: 1px solid #ffffff;
+        transition: width 0.3s ease;
+    }
+
+    #menu li a:hover::after {
+        width: 100%;
+    }
+
+    .logo img {
+        margin-left: 50px;
+    }
+
+    #home-content {
+        padding: 20px;
+    }
+
+    #home-content h1 {
+        font-size: var(--font-2xl);
+    }
+
+    .social-links {
+        gap: 50px;
+    }
+
+    .social-links a {
+        font-size: var(--font-xl);
+    }
+
+    #about {
+        padding: 15px;
+    }
+
+    .title,
+    .project-info h2 {
+        font-size: var(--font-2xl);
+    }
+}
+
+/* Desktop comuns e iPads em modo paisagem  */
+@media (min-width: 1024px) {
+    #home-content {
+        margin: 20px;
+    }
+
+    #home-content h1 {
+        font-size: var(--font-3xl);
+    }
+
+    #home-content p {
+        margin-top: 20px;
+        font-size: var(--font-lg);
+    }
+
+    .social-links {
+        gap: 70px;
+    }
+
+    .social-links a {
+        font-size: var(--font-3xl);
+    }
+
+    #about-content {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #about-content h2 {
+        margin-bottom: 40px;
+    }
+
+    .about-text-box {
+        max-width: 500px;
+        margin-top: 20px;
+        font-size: var(--font-lg);
+    }
+
+    #about-image {
+        max-width: 400px;
+        border-radius: 50px;
+    }
+
+    #hard-skills-box h2 {
+        margin: 40px 0 40px;
+    }
+
+    .hard-skills {
+        align-items: center;
+        height: 150px;
+        border-top: 1px solid var(--border-dark);
+        border-bottom: 1px solid var(--border-dark);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: var(--font-3xl);
+    }
+
+    .project-info h2 {
+        margin-top: 50px;
+        font-size: var(--font-3xl);
+    }
+
+    .project-info p {
+        margin-top: 50px;
+        font-size: var(--font-lg);
+    }
+
+    #contact p {
+        font-size: var(--font-lg);
+    }
+
+    #contact img {
+        max-width: 600px;
+    }
+
+    footer {
+        font-size: var(--font-sm);
+    }
+}
+
+/* Telas grandes */
+@media (min-width: 1440px) {
+
+    .content-width {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #home-content {
+        margin: 40px;
+    }
+
+    #home-content h1 {
+        font-size: var(--font-4xl);
+    }
+
+    .social-links {
+        gap: 100px;
+    }
+
+    .social-links a {
+        font-size: var(--font-4xl);
+    }
+
+    .about-text-box {
+        max-width: 600px;
+        font-size: var(--font-xl);
+    }
+
+    #hard-skills-box h2 {
+        margin: 40px 0 40px;
+    }
+
+    #about-content h2 {
+        margin-bottom: 40px;
+    }
+
+    #about-image {
+        height: auto;
+        max-width: 500px;
+    }
+
+    #projects h2 {
+        margin-bottom: 50px;
+    }
+
+    .title {
+        font-size: var(--font-4xl);
+    }
+
+    .project-info h2 {
+        margin-bottom: 30px;
+        font-size: var(--font-4xl);
+    }
+
+    #contact img {
+        max-width: 900px;
+        margin-bottom: 20px;
+    }
 }
