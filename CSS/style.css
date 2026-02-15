@@ -58,6 +58,10 @@ section {
     margin-bottom: 40px;
 }
 
+section #home {
+    height: 100vh;
+}
+
 /* #region Cabeçalho do site */
 header {
     border-bottom: 1px solid var(--bg-light);
@@ -533,6 +537,7 @@ footer {
     #home-content p {
         margin-top: 20px;
         font-size: var(--font-lg);
+        line-height: var(--line-lg);
     }
 
     .social-links {
@@ -621,6 +626,7 @@ footer {
 
     .social-links {
         gap: 100px;
+        margin-bottom: 50px;
     }
 
     .social-links a {
