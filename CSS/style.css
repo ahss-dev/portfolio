@@ -47,8 +47,6 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    font-size: var(--font-md);
-    line-height: var(--line-md);
     background-color: var(--bg-dark);
     color: var(--text-primary);
     padding-top: 70px;
@@ -58,11 +56,12 @@ section {
     margin-bottom: 40px;
 }
 
-section #home {
-    height: 100vh;
-}
 
 /* #region Cabeçalho do site */
+#home {
+    height: calc(100dvh - 70px);
+}
+
 header {
     border-bottom: 1px solid var(--bg-light);
 }
@@ -194,28 +193,37 @@ section #home {
 }
 
 #home-content h1 {
+    margin-top: 10px;
     font-size: var(--font-xl);
     line-height: var(--line-lg);
 }
 
+span {
+    color: #729fdf;
+    font-weight: 600;
+}
+
 #home-content p {
+    margin-top: 10px;
     font-size: var(--font-md);
     color: var(--text-secondary);
 }
 
 #home-image img {
-    margin-top: 15px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 .social-links {
+    margin-top: 20px;
     height: 70px;
     align-items: center;
     justify-content: center;
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 .social-links a {
@@ -503,39 +511,64 @@ footer {
     }
 
     #home-content h1 {
+        margin-top: 20px;
         font-size: var(--font-2xl);
     }
 
+    #home-content p {
+        margin-top: 20px;
+        font-size: var(--font-lg);
+        line-height: var(--line-lg);
+    }
+
+    #home-image img {
+        margin-top: 30px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     .social-links {
+        margin-top: 40px;
         gap: 50px;
     }
 
     .social-links a {
-        font-size: var(--font-xl);
+        font-size: var(--font-3xl);
     }
 
     #about {
         padding: 15px;
     }
 
+    .about-text-box p {
+        font-size: var(--font-lg);
+        line-height: var(--line-lg);
+    }
+
     .title,
     .project-info h2 {
         font-size: var(--font-2xl);
+    }
+
+    .project-info p {
+        font-size: var(--font-lg);
+        line-height: var(--line-lg);
+    }
+
+    #contact p {
+        font-size: var(--font-lg);
+        font-weight: var(--line-lg);
     }
 }
 
 /* Desktop comuns e iPads em modo paisagem  */
 @media (min-width: 1024px) {
-    #home-content {
-        margin: 20px;
-    }
-
     #home-content h1 {
         font-size: var(--font-3xl);
     }
 
     #home-content p {
-        margin-top: 20px;
         font-size: var(--font-lg);
         line-height: var(--line-lg);
     }
@@ -616,6 +649,11 @@ footer {
         margin: 0 auto;
     }
 
+    #home-image img {
+        margin-top: 70px;
+        height: auto;
+    }
+
     #home-content {
         margin: 40px;
     }
@@ -626,6 +664,7 @@ footer {
 
     .social-links {
         gap: 100px;
+        margin-top: 70px;
         margin-bottom: 50px;
     }
 
@@ -655,13 +694,13 @@ footer {
         margin-bottom: 50px;
     }
 
-    .title {
-        font-size: var(--font-4xl);
-    }
-
     .project-info h2 {
         margin-bottom: 30px;
         font-size: var(--font-4xl);
+    }
+
+    .project-info p {
+        font-size: var(--font-lg);
     }
 
     #contact img {
