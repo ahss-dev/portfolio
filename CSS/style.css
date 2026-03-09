@@ -193,7 +193,7 @@ section #home {
 }
 
 #home-content h1 {
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: var(--font-xl);
     line-height: var(--line-lg);
 }
@@ -204,21 +204,22 @@ span {
 }
 
 #home-content p {
-    margin-top: 10px;
+    margin: 20px 0 30px;
     font-size: var(--font-md);
     color: var(--text-secondary);
 }
 
 #home-image img {
     display: block;
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     max-height: 100%;
+    margin: 0 auto;
     object-fit: contain;
 }
 
 .social-links {
-    margin-top: 20px;
+    margin-top: 40px;
     height: 70px;
     align-items: center;
     justify-content: center;
@@ -227,7 +228,7 @@ span {
 }
 
 .social-links a {
-    font-size: var(--font-2xl);
+    font-size: var(--font-3xl);
     color: var(--text-light);
     opacity: 0.7;
     transition: color 0.3s ease, transform 0.3s ease;
